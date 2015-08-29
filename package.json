@@ -1,0 +1,38 @@
+{
+  "name": "bauer-plugin-watch",
+  "version": "0.1.0",
+  "description": "Plugin for bauer to watch for file changes.",
+  "keywords": [
+    "multi-thread",
+    "multi-core",
+    "process",
+    "fork",
+    "multi-process",
+    "cluster",
+    "crawler",
+    "watch"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/yneves/node-bauer-plugin-watch",
+  "author": {
+    "name": "Yuri Neves Silveira",
+    "url": "http://yneves.com",
+    "email": "npm@yneves.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yneves/node-bauer-plugin-watch.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "mocha": ">=1.0.0"
+  },
+  "dependencies": {
+    "bauer-crawler": "*",
+    "bauer-factory": "*",
+    "chokidar": "^1.0.5"
+  },
+  "main": "lib/index.js"
+}
