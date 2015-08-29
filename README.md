@@ -60,9 +60,9 @@ module.exports = function(promise) {
 
   * `Promise`
     * `.watch() :Promise`
-    * `.watch(files String) :Promise`
+    * `.watch(files Array) :Promise`
     * `.watch(file String) :Promise`
-    * `.watch(files String, options Object) :Promise`
+    * `.watch(files Array, options Object) :Promise`
     * `.watch(file String, options Object) :Promise`
     * `.watch(options Object) :Promise`
 
