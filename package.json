@@ -1,6 +1,6 @@
 {
   "name": "bauer-plugin-watch",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Plugin for bauer to watch for file changes.",
   "keywords": [
     "multi-thread",
@@ -30,9 +30,9 @@
     "mocha": ">=1.0.0"
   },
   "dependencies": {
-    "bauer-crawler": "*",
+    "bauer-crawler": "^0.2.2",
     "bauer-factory": "*",
-    "chokidar": "^1.0.5"
+    "chokidar": "*"
   },
   "main": "lib/index.js"
 }
