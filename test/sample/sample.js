@@ -15,14 +15,16 @@ var crawler = new Crawler({
 crawler.loadPlugin(__dirname + "/../../");
 
 crawler.start(function() {
+  var file = __dirname + "/sample.txt";
   setTimeout(function() {
-    fs.writeFileSync(__dirname + "/sample.txt",Math.random());
+    fs.writeFileSync(file,Math.random());
   },500);
   return this.Promise
-    .watch(__dirname + "/sample.txt")
+    .watch(file)
     .then(function(output) {
       assert.strictEqual(output.event,"change");
-      assert.strictEqual(output.path,__dirname + "/sample.txt");
+      assert.strictEqual(output.path,file);
+      fs.unlinkSync(file);
     });
 });
 
